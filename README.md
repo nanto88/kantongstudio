@@ -2,13 +2,15 @@
 
 # Kantong Studio
 
-Public static pages for Kantong Studio apps. One folder per site, each deployed as its own Cloudflare Pages project. No build step: Pages serves the folder as it is.
+Public static pages for Kantong Studio products. One folder per product at the repo root, each deployed as its own Cloudflare Pages project on `<product>.kantongstudio.com`. No build step: Pages serves the folder as it is.
 
 | Folder | Domain | Pages project settings |
 |---|---|---|
-| `landing_page/saku/` | `saku.kantongstudio.com` | Build output directory `landing_page/saku`, build command empty, build watch paths `landing_page/saku/*` |
+| `saku/` | `saku.kantongstudio.com` | Build output directory `saku`, build command empty, build watch paths `saku/*` |
 
-Rules for every site (see `landing_page/saku/_headers`): no scripts, no third-party requests, never framed, light theme only.
+New product: add a `<product>/` folder, then a new Pages project with output directory `<product>`, watch paths `<product>/*` and custom domain `<product>.kantongstudio.com`.
+
+Rules for every site (see `saku/_headers`): no scripts, no third-party requests, never framed, light theme only.
 
 ## Saku
 
@@ -23,4 +25,4 @@ Preview locally (serves clean URLs like Cloudflare Pages):
       def translate_path(s, p):
         f = super().translate_path(p)
         return f + '.html' if not os.path.exists(f) and os.path.exists(f + '.html') else f
-    h.ThreadingHTTPServer(('127.0.0.1', 8002), lambda *a: H(*a, directory='landing_page/saku')).serve_forever()"
+    h.ThreadingHTTPServer(('127.0.0.1', 8002), lambda *a: H(*a, directory='saku')).serve_forever()"
