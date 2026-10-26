@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "saku",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import http.server as h, os\nclass H(h.SimpleHTTPRequestHandler):\n  def translate_path(s, p):\n    f = super().translate_path(p)\n    return f + '.html' if not os.path.exists(f) and os.path.exists(f + '.html') else f\nh.ThreadingHTTPServer(('127.0.0.1', 8002), lambda *a: H(*a, directory='landing_page/saku')).serve_forever()"],
+      "port": 8002
+    }
+  ]
+}

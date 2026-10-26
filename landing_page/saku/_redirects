@@ -1,0 +1,6 @@
+# Short and Indonesian aliases (Cloudflare Pages `_redirects`). Pages already maps /privacy.html to /privacy.
+/privasi          /privacy         301
+/privacy-policy   /privacy         301
+/ketentuan        /terms           301
+/hapus-akun       /delete-account  301
+/id               /                301

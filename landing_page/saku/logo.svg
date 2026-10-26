@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1932 1932" width="1024" height="1024">
+  <defs>
+    <clipPath id="coin"><circle cx="966" cy="966" r="616"/></clipPath>
+    <clipPath id="pocket"><path id="shape" d="M640,668 Q966,708 1292,668 Q1306,668 1306,684 L1280,1100 Q1275,1180 1200,1240 Q1100,1310 972,1340 Q966,1342 960,1340 Q830,1310 730,1240 Q658,1180 654,1100 L626,684 Q626,668 640,668 Z"/></clipPath>
+  </defs>
+  <rect width="1932" height="1932" fill="#32334F"/>
+  <g clip-path="url(#coin)">
+    <rect x="350" y="350" width="616" height="1232" fill="#F4CB63"/>
+    <rect x="966" y="350" width="616" height="1232" fill="#E0A94B"/>
+  </g>
+  <circle cx="966" cy="966" r="606" fill="none" stroke="#FBE4A8" stroke-width="22"/>
+  <use href="#shape" fill="#3E3D63"/>
+  <path clip-path="url(#pocket)" d="M600,640H1072V930A255,255 0 0 1 817,1185H600Z" fill="#505686"/>
+  <path d="M678,722 H1255 L1232,1100 Q1225,1160 1160,1205 Q1070,1270 966,1298 Q862,1270 772,1205 Q707,1160 702,1100 Z" fill="none" stroke="#F9DFA0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="36 26"/>
+</svg>
