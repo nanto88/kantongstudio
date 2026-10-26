@@ -12,6 +12,8 @@ New product: add a `<product>/` folder, then a new Pages project with output dir
 
 Rules for every site (see `saku/_headers`): no scripts, no third-party requests, never framed, light theme only.
 
+Unreleased parts of a page are hidden behind flags: see [feature_flag.md](feature_flag.md).
+
 ## Saku
 
 Landing (`/`, `/en`), `/privacy`, `/terms`, `/delete-account` for Google Play and Google sign-in. The plan, the Cloudflare and Play Console steps, and the open questions live in the app repo: `saku/plan/29-website.md`.

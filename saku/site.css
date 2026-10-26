@@ -197,6 +197,18 @@ section.block { padding:3.5rem 0 0; }
 .m-logo { width:64px; height:64px; border-radius:18px; margin:6px auto 0; display:block; }
 .m-center { text-align:center; }
 .m-space { flex:1; }
+/* Feature flags (feature_flag.md): a flagged slide ships with `hidden` and stays out of the carousel until released */
+.slide[hidden] { display:none; }
+/* Saku Pro slide: a dark card with a slow ochre shimmer, then Free vs Pro rows from the app's comparison table */
+.m-pro { border-radius:16px; padding:14px; color:var(--sel-fg); background:linear-gradient(110deg, var(--sel-bg) 40%, #4A3514 50%, var(--sel-bg) 60%) 0 0 / 250% 100%; }
+.m-pro b { display:block; font-size:22px; letter-spacing:-.02em; margin-top:6px; }
+.m-pro small { font-size:11px; opacity:.85; }
+.m-cmp { display:grid; grid-template-columns:1fr 56px 52px; gap:6px; align-items:center; font-size:11px; padding:6px 0; }
+.m-cmp + .m-cmp { border-top:1px solid var(--line); }
+.m-cmp span:nth-child(2), .m-cmp b { text-align:center; }
+.m-cmp span:nth-child(2) { color:var(--muted); }
+.m-cmp b { color:var(--accent); }
+.m-cmp-h { color:var(--muted); font-size:10px; padding-top:0; }
 .m-top { display:flex; justify-content:space-between; align-items:center; gap:8px; }
 
 /* The loops. Base styles are the finished frame, so no-motion users see a complete screen. */
@@ -210,6 +222,7 @@ section.block { padding:3.5rem 0 0; }
 @keyframes m-fill { 0%, 8% { transform:scaleX(0); } 40%, 100% { transform:scaleX(1); } }
 @keyframes m-off { 0%, 40% { opacity:1; } 48%, 100% { opacity:.45; } }
 @keyframes m-type { 0%, 4% { clip-path:inset(0 100% 0 0); } 34%, 100% { clip-path:inset(0); } }
+@keyframes m-shine { 0% { background-position:100% 0; } 100% { background-position:-150% 0; } }
 @keyframes m-pop { 0%, 5% { transform:scale(0); } 18%, 100% { transform:scale(1); } }
 .mini .k3, .mini .k5, .mini .k000 { animation:m-tap 4.5s infinite; }
 .mini .k5 { animation-delay:.45s; } .mini .k000 { animation-delay:.9s; }
@@ -221,6 +234,8 @@ section.block { padding:3.5rem 0 0; }
 .mini .m-bars i:nth-child(2) { animation-delay:.08s; } .mini .m-bars i:nth-child(3) { animation-delay:.16s; }
 .mini .m-bars i:nth-child(4) { animation-delay:.24s; } .mini .m-bars i:nth-child(5) { animation-delay:.32s; } .mini .m-bars i:nth-child(6) { animation-delay:.4s; }
 .mini .m-meter i { animation:m-fill 4.5s infinite both; }
+.mini .m-pro { animation:m-shine 4.5s linear infinite; }
+.mini .m-cmp.a1 { animation:m-in1 4.5s infinite both; } .mini .m-cmp.a2 { animation:m-in2 4.5s infinite both; } .mini .m-cmp.a3 { animation:m-in3 4.5s infinite both; }
 .mini .m-q { animation:m-type 4.5s steps(24) infinite both; }
 .mini .m-grid .icon { animation:m-pop 4.5s infinite both; }
 .mini .m-grid .icon:nth-child(2) { animation-delay:.1s; } .mini .m-grid .icon:nth-child(3) { animation-delay:.2s; }
