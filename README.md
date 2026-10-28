@@ -10,7 +10,7 @@ Public static pages for Kantong Studio products. One folder per product at the r
 
 New product: add a `<product>/` folder, then a new Pages project with output directory `<product>`, watch paths `<product>/*` and custom domain `<product>.kantongstudio.com`.
 
-Rules for every site (see `saku/_headers`): no inline script, never framed, light theme only. The only third party is Google Analytics (`saku/analytics.js`, measurement ID `G-0WGD2H7MVZ`, not counted on localhost); it is disclosed in `saku/privacy.html`, so any new third-party request needs the CSP and the privacy policy changed in the same commit.
+Rules for every site (see `saku/_headers`): no inline script, never framed, light theme only. The only third party is Google Analytics (`saku/analytics.js`, measurement ID `G-0WGD2H7MVZ`), loaded only after the visitor accepts the cookie banner and not counted on localhost; it is disclosed in `saku/privacy.html`, so any new third-party request needs the CSP and the privacy policy changed in the same commit.
 
 Unreleased parts of a page are hidden behind flags: see [feature_flag.md](feature_flag.md).
 

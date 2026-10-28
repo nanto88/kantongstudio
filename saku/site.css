@@ -252,6 +252,14 @@ section.block { padding:3.5rem 0 0; }
   .mini .m-toast, .mini .m-notif { display:none; }
 }
 
+/* Cookie consent banner (analytics.js) */
+.consent { position:fixed; left:16px; right:16px; bottom:16px; z-index:10; max-width:44rem; margin:0 auto; display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; justify-content:space-between; background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:1rem 1.15rem; box-shadow:var(--shadow); font-size:.92rem; }
+.consent p { margin:0; flex:1 1 18rem; }
+.consent-btns { display:flex; gap:.5rem; }
+.consent .btn { min-height:44px; padding:.5rem 1rem; }
+.linklike { background:none; border:0; padding:0; font:inherit; color:var(--muted); text-decoration:underline; cursor:pointer; }
+.linklike:focus-visible { outline:3px solid var(--primary); outline-offset:3px; border-radius:6px; }
+
 /* Documents: privacy, terms, delete account */
 .doc { max-width:44rem; margin:0 auto; padding:1.5rem 16px 0; }
 .doc h1 { font-size:clamp(1.8rem, 4vw, 2.4rem); margin:1.5rem 0 .25rem; }
