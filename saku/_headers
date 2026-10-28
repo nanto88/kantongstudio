@@ -1,9 +1,9 @@
 # Classification: INTERNAL
 # Response headers for saku.kantongstudio.com (Cloudflare Pages `_headers` format; plan/29-website.md).
-# Static pages only: no scripts, no third-party requests, never framed. Add font-src 'self' with the self-hosted font (W2).
+# Static pages only: no inline script; the only third party is Google Analytics (analytics.js, disclosed in privacy.html); never framed. Add font-src 'self' with the self-hosted font (W2).
 /*
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'none'; style-src 'self'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; script-src 'self' https://*.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'none'; form-action 'none'
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()

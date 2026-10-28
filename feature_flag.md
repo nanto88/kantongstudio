@@ -2,7 +2,7 @@
 
 # Feature flags
 
-The sites have no scripts and no build step, so a flag is an HTML attribute: a flagged block ships with `data-flag="<name>" hidden`, and `site.css` keeps it out of the page (`.slide[hidden] { display:none; }`). Releasing means removing `hidden`; hiding again means adding it back.
+The sites run no script of their own and have no build step, so a flag is an HTML attribute: a flagged block ships with `data-flag="<name>" hidden`, and `site.css` keeps it out of the page (`.slide[hidden] { display:none; }`). Releasing means removing `hidden`; hiding again means adding it back.
 
 The markup stays in the page source while hidden. Anyone who opens the source can read it, so a flagged block must never hold a secret, a price that is not final, or anything the product may not ship.
 
