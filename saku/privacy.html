@@ -27,7 +27,7 @@
 
 <section id="id" lang="id">
 <h1>Kebijakan Privasi Saku</h1>
-<p class="muted">Berlaku sejak 27 Oktober 2026, diperbarui 30 Oktober 2026 (penjelasan lokasi). Saku dikelola oleh Kantong Studio ("kami"). Kontak: <a href="mailto:cs-saku@kantongstudio.com">cs-saku@kantongstudio.com</a>.</p>
+<p class="muted">Berlaku sejak 27 Oktober 2026, diperbarui 30 Oktober 2026 (lokasi, teman dan notifikasi tagihan). Saku dikelola oleh Kantong Studio ("kami"). Kontak: <a href="mailto:cs-saku@kantongstudio.com">cs-saku@kantongstudio.com</a>.</p>
 <p>Saku mencatat uang masuk dan keluar. Data keuangan adalah data pribadi yang sensitif, jadi kami hanya memakai yang perlu dan menjelaskannya di sini, sesuai UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi.</p>
 
 <h2>Yang tetap di ponsel</h2>
@@ -47,6 +47,9 @@
 <li><b>Foto struk:</b> hanya diunggah jika kamu melampirkannya, disimpan privat, dan dihapus bersama transaksinya. Foto struk bisa memuat data pribadi.</li>
 </ul>
 
+<h2>Teman dan notifikasi tagihan</h2>
+<p>Jika kamu masuk lalu menautkan teman Saku (lewat QR atau tautan undangan, tidak pernah lewat nomor telepon atau email, dan Saku tidak membaca daftar kontakmu), kami menyimpan tautan pertemanan itu sampai kamu atau temanmu memutuskannya. Kamu juga bisa mengirim permintaan tagihan ke teman yang tertaut. Permintaan itu (judul, tanggal, total, bagian penerima, rincian item, pajak dan layanan, serta info pembayaran hanya jika kamu menyalakannya untuk permintaan itu) disimpan di server kami dan hanya terlihat oleh pengirim dan penerima. Untuk memberi tahu penerima, Saku memakai notifikasi push lewat Firebase Cloud Messaging milik Google: ponselmu mendaftarkan token perangkat ke server kami, lalu server mengirim pesan ke Google untuk diteruskan ke ponselmu. Pesan hanya memuat jenis kejadian dan nomor acuan; teks notifikasi dibuat di ponsel dan isi tagihan diambil dari server setelah pesan tiba. Token perangkat adalah data pribadi: token dihapus saat kamu keluar atau menghapus akun, dan token yang tidak terlihat selama 60 hari dibersihkan. Kamu bisa mematikan notifikasi tagihan di pengaturan notifikasi Saku atau Android.</p>
+
 <h2>Laporan error</h2>
 <p>Saku mengirim laporan error secara bawaan, tanpa bertanya dulu, supaya kami bisa memperbaiki masalah lebih cepat. Saat Saku crash atau langkah penting gagal (misalnya sinkronisasi atau hapus akun), Saku mengirim laporan ke Sentry, layanan pihak ketiga dengan server di Amerika Serikat. Isinya: jenis error, posisi di kode (stack trace), versi Saku, versi Android, dan model ponsel. Saku tidak mengirim nominal, nama, catatan, lokasi, teks layar, atau tangkapan layar. Kamu bisa mematikannya kapan saja di Pengaturan › Privasi &amp; keamanan, pada "Bantu kami memperbaiki masalah lebih cepat". Jika dimatikan, tidak ada lagi yang dikirim.</p>
 
@@ -62,7 +65,7 @@
 </ul>
 
 <h2>Penyimpanan di luar negeri</h2>
-<p>Server sinkronisasi berada di Singapura, fitur AI cloud memakai penyedia di luar Indonesia, dan laporan error (kecuali kamu mematikannya) disimpan di Amerika Serikat. Kami memakainya hanya untuk fitur yang kamu pakai.</p>
+<p>Server sinkronisasi berada di Singapura, fitur AI cloud memakai penyedia di luar Indonesia, notifikasi push tagihan teman lewat Firebase Cloud Messaging milik Google, dan laporan error (kecuali kamu mematikannya) disimpan di Amerika Serikat. Kami memakainya hanya untuk fitur yang kamu pakai.</p>
 
 <h2>Perubahan</h2>
 <p>Jika kebijakan ini berubah, tanggal di atas diperbarui dan perubahan penting diberitahukan di aplikasi.</p>
@@ -70,7 +73,7 @@
 
 <section id="en" lang="en">
 <h1>Saku Privacy Policy</h1>
-<p class="muted">Effective 27 October 2026, updated 30 October 2026 (location explained). Saku is run by Kantong Studio ("we"). Contact: <a href="mailto:cs-saku@kantongstudio.com">cs-saku@kantongstudio.com</a>.</p>
+<p class="muted">Effective 27 October 2026, updated 30 October 2026 (location, friends and bill notifications). Saku is run by Kantong Studio ("we"). Contact: <a href="mailto:cs-saku@kantongstudio.com">cs-saku@kantongstudio.com</a>.</p>
 <p>Saku records money in and out. Financial data is sensitive personal data, so we use only what is needed and explain it here, in line with Indonesia's Personal Data Protection Law (Law No. 27 of 2022).</p>
 
 <h2>What stays on your phone</h2>
@@ -90,6 +93,9 @@
 <li><b>Receipt photos:</b> uploaded only if you attach one, kept private, and deleted with its transaction. Receipt photos can show personal data.</li>
 </ul>
 
+<h2>Friends and bill notifications</h2>
+<p>If you sign in and link a Saku friend (by QR or invite link, never by phone number or email, and Saku does not read your contacts), we keep that friend link until you or your friend remove it. You can also send a bill request to a linked friend. The request (title, date, total, the recipient's share, item lines, tax and service lines, and payment details only if you switch them on for that request) is stored on our server and is visible only to the sender and the recipient. To tell the recipient, Saku uses push notifications through Google's Firebase Cloud Messaging: your phone registers a device token with our server, and our server sends a message to Google to pass on to your phone. The message carries only the event type and a reference number; the notification text is built on the phone and the bill details are fetched from our server after the message arrives. A device token is personal data: it is deleted when you sign out or delete your account, and a token not seen for 60 days is cleared. You can turn bill notifications off in Saku's or Android's notification settings.</p>
+
 <h2>Crash reports</h2>
 <p>Saku sends crash reports by default, without asking first, so we can fix problems faster. When Saku crashes or a key step fails (for example sync or deleting your account), Saku sends a report to Sentry, a third-party service with servers in the United States. It contains the error type, the place in the code (stack trace), the Saku version, the Android version and the phone model. Saku does not send amounts, names, notes, locations, screen text or screenshots. You can turn it off at any time in Settings › Privacy &amp; security, under "Help us fix problems faster". If you turn it off, nothing more is sent.</p>
 
@@ -105,7 +111,7 @@
 </ul>
 
 <h2>Storage outside Indonesia</h2>
-<p>The sync server is in Singapore, the cloud AI feature uses providers outside Indonesia, and crash reports (unless you turn them off) are stored in the United States. We use them only for features you use.</p>
+<p>The sync server is in Singapore, the cloud AI feature uses providers outside Indonesia, friend bill push notifications go through Google's Firebase Cloud Messaging, and crash reports (unless you turn them off) are stored in the United States. We use them only for features you use.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, we update the date above and tell you in the app about important changes.</p>
