@@ -152,6 +152,9 @@ section.block { padding:3.5rem 0 0; }
 .m-amt span { color:var(--muted); font-size:18px; }
 .m-chips { display:flex; flex-wrap:wrap; gap:6px; }
 .m-chip { background:var(--tint); color:var(--on-tint); border-radius:99px; padding:3px 9px; font-size:10.5px; font-weight:800; }
+.m-chip.m-off { background:var(--track); color:var(--muted); } /* split bill: a person not given this item */
+.m-split .m-chip:not(.m-off) { background:var(--sel-bg); color:var(--sel-fg); }
+.m-split + .m-split { border-top:1px solid var(--line); margin-top:5px; padding-top:5px; } .m-split .m-chips { margin-top:3px; }
 .m-keys { flex:1; display:grid; grid-template-columns:repeat(3, 1fr); gap:6px; }
 .m-keys span { background:var(--surface); border:1px solid var(--line); border-radius:10px; display:grid; place-items:center; font-size:14px; font-weight:800; }
 .m-btn { background:var(--primary); color:var(--on-primary); border-radius:12px; padding:9px; text-align:center; font-weight:800; }
