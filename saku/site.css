@@ -61,7 +61,7 @@ h1, h2, h3 { font-weight:800; letter-spacing:-.02em; line-height:1.2; }
 .phone img { display:block; width:100%; height:auto; border-radius:32px; }
 
 /* Closing banner: links to the Play listing */
-.banner { display:block; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); }
+.banner { display:block; max-width:50rem; margin-inline:auto; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); }
 .banner img { display:block; width:100%; height:auto; }
 .banner:focus-visible { outline:3px solid var(--primary); outline-offset:4px; }
 
